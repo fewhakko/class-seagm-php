@@ -15,6 +15,12 @@ foreach ($seagm->getListGame()["cardList"] as $data) {
     print_r($data);
 }
 ```
+#### GetDetailGame
+```
+foreach ($seagm->gamedetails($data["id"])["card_type_list"] as $val) {
+    print_r($val);
+}
+```
 #### BuyOrder
 ```
 $trade = $seagm->BuyOrderFreeFire("5669",$player_id)["trade"];
