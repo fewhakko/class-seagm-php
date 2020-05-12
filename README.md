@@ -4,10 +4,9 @@
 ```
 <?php
   require("class.seagm.php");
-  $api = new FivemAPI();
-  
-  $server = $api->ServerInfo("127.0.0.1", "30120"); //Change 127.0.0.1 to your IP Server //Change 30120 to your Port Server
-  echo json_encode($server);
+  $seagm = new SeagmIOS($email,$password);
+  print_r($seagm->GetUserToken());
+  print_r($seagm->Login($user_token));
 ?>
 ```
 
