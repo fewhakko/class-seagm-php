@@ -1,10 +1,5 @@
 # class-seagm-php
-- [x] Php
-- [x] Json
-- [x] UnofficialAPI
-- [x] Free API
 
-### Example **class.seagm.php**
 #### LoginToken
 ```
 <?php
