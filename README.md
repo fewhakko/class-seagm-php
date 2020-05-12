@@ -23,7 +23,7 @@ foreach ($seagm->gamedetails($data["id"])["card_type_list"] as $val) {
 ```
 #### BuyOrder
 ```
-$trade = $seagm->BuyOrderFreeFire("5669",$player_id)["trade"];
+$trade = $seagm->BuyOrderFreeFire($idcard,$player_id)["trade"];
 if (isset($trade["id"])) {
   $confirm = $seagm->ConfirmOrder($trade["id"]);
 
