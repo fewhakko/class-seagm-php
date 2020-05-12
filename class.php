@@ -5,7 +5,6 @@ class SeagmIOS {
 	public $user_token = null;
 	public $email = null;
 	public $password = null;
-	public $app_token = null;
 	
 	public function __construct ($email = null, $password = null,$user_token = null) {
 		if (empty($user_token)) {
